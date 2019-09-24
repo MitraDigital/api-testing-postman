@@ -1,0 +1,144 @@
+{
+	"id": "ad64206b-1bc9-4888-aa34-a1d17daa53cd",
+	"name": "Environment1",
+	"values": [
+		{
+			"key": "storeUsername",
+			"value": "admin",
+			"enabled": true
+		},
+		{
+			"key": "storePassword",
+			"value": "admin",
+			"enabled": true
+		},
+		{
+			"key": "storeBasicToken",
+			"value": "ZzhHWF83anFYUmJ0eUlUSEVxNXB3bE1MWXVRYTpGQVRydUNlSkxmTTBTMFNkdjNNTkNJTmowRFFh",
+			"enabled": true
+		},
+		{
+			"key": "storeConsumerkey",
+			"value": "g8GX_7jqXRbtyITHEq5pwlMLYuQa",
+			"enabled": true
+		},
+		{
+			"key": "storeConsumersecret",
+			"value": "FATruCeJLfM0S0Sdv3MNCINj0DQa",
+			"enabled": true
+		},
+		{
+			"key": "storeAccessToken",
+			"value": "e311d9f7-4e6d-32f2-b8e1-0aec8cf7cce5",
+			"enabled": true
+		},
+		{
+			"key": "publisherUsername",
+			"value": "admin",
+			"enabled": true
+		},
+		{
+			"key": "publisherPassword",
+			"value": "admin",
+			"enabled": true
+		},
+		{
+			"key": "publisherBasicToken",
+			"value": "aXd5NERBSUxwZ0MxMHVNV3JvSnNDYjBfM0dNYTphQWlJajlrcWI2azFZZXo2cDcwZDY2X01GT3Nh",
+			"enabled": true
+		},
+		{
+			"key": "publisherConsumerkey",
+			"value": "iwy4DAILpgC10uMWroJsCb0_3GMa",
+			"enabled": true
+		},
+		{
+			"key": "publisherConsumersecret",
+			"value": "aAiIj9kqb6k1Yez6p70d66_MFOsa",
+			"enabled": true
+		},
+		{
+			"key": "publisherAccessToken",
+			"value": "e111bf3d-fca8-3da4-bd0a-c55deda5d60f",
+			"enabled": true
+		},
+		{
+			"key": "apiConsumerkey",
+			"value": null,
+			"enabled": true
+		},
+		{
+			"key": "apiConsumersecret",
+			"value": null,
+			"enabled": true
+		},
+		{
+			"key": "apiBasicToken",
+			"value": "TXNMV1V2QkxTRGpkYm5XOFM4RU96UUxXNjRRYTpRZjNJSGt6UzZVOUdna2JTVnVlTkJEZ1R3S3Nh",
+			"enabled": true
+		},
+		{
+			"key": "apiAccessToken",
+			"value": "d4884e33-ef0c-3016-a4f8-3a14c0866031",
+			"enabled": true
+		},
+		{
+			"key": "applicationName",
+			"value": "apiTesApp",
+			"enabled": true
+		},
+		{
+			"key": "applicationId",
+			"value": "30b2bb09-e1f4-4e01-abd5-b95dfaf62b4c",
+			"enabled": true
+		},
+		{
+			"key": "apiId",
+			"value": "ec85b6c7-25cd-47d2-9c87-d7a4f3f06aa9",
+			"enabled": true
+		},
+		{
+			"key": "apiName",
+			"value": "PhoneVerification",
+			"enabled": true
+		},
+		{
+			"key": "access_token",
+			"value": "12adb853-0993-3fbd-a906-32d5e6f8e06b",
+			"enabled": true
+		},
+		{
+			"key": "envToken",
+			"value": null,
+			"enabled": true
+		},
+		{
+			"key": "envBasicToken",
+			"value": "dW5kZWZpbmVkOnVuZGVmaW5lZA==",
+			"enabled": true
+		},
+		{
+			"key": "phoneNumber",
+			"value": "0774589632",
+			"enabled": true
+		},
+		{
+			"key": "subscriptionId",
+			"value": "03595394-c06b-401a-8c8c-54348c61a7bb",
+			"enabled": true
+		},
+		{
+			"key": "isApplicationExist",
+			"value": "false",
+			"enabled": true
+		},
+		{
+			"key": "isKeyGenerated",
+			"value": "false",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2019-09-24T06:45:49.746Z",
+	"_postman_exported_using": "Postman/7.7.2"
+}
