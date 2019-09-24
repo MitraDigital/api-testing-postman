@@ -77,12 +77,10 @@
 							}
 						},
 						"url": {
-							"raw": "https://localhost:9443/client-registration/v0.11/register",
-							"protocol": "https",
+							"raw": "{{storeHost}}/client-registration/v0.11/register",
 							"host": [
-								"localhost"
+								"{{storeHost}}"
 							],
-							"port": "9443",
 							"path": [
 								"client-registration",
 								"v0.11",
@@ -168,12 +166,10 @@
 							]
 						},
 						"url": {
-							"raw": "https://localhost:8243/token",
-							"protocol": "https",
+							"raw": "{{tokenHost}}/token",
 							"host": [
-								"localhost"
+								"{{tokenHost}}"
 							],
-							"port": "8243",
 							"path": [
 								"token"
 							]
@@ -213,12 +209,10 @@
 							}
 						],
 						"url": {
-							"raw": "https://localhost:9443/api/am/store/v0.11/applications?query={{applicationName}}",
-							"protocol": "https",
+							"raw": "{{storeHost}}/api/am/store/v0.11/applications?query={{applicationName}}",
 							"host": [
-								"localhost"
+								"{{storeHost}}"
 							],
-							"port": "9443",
 							"path": [
 								"api",
 								"am",
@@ -298,12 +292,10 @@
 							}
 						},
 						"url": {
-							"raw": "https://localhost:9443/api/am/store/v0.11/applications",
-							"protocol": "https",
+							"raw": "{{storeHost}}/api/am/store/v0.11/applications",
 							"host": [
-								"localhost"
+								"{{storeHost}}"
 							],
-							"port": "9443",
 							"path": [
 								"api",
 								"am",
@@ -327,8 +319,8 @@
 									"\r",
 									"if(responseCode.code === 200){\r",
 									"\tif(jsonData.keys.length > 0){\r",
-									"\t\tpostman.setEnvironmentVariable (\"apiConsumerkey\", jsonData.consumerKey);\r",
-									"\t\tpostman.setEnvironmentVariable (\"apiConsumersecret\", jsonData.consumerSecret);\r",
+									"\t\tpostman.setEnvironmentVariable (\"apiConsumerkey\", jsonData.keys[0].consumerKey);\r",
+									"\t\tpostman.setEnvironmentVariable (\"apiConsumersecret\", jsonData.keys[0].consumerSecret);\r",
 									"\t\tpostman.setNextRequest(\"CallingDynamicClientRegPublisherEndpoint\")\r",
 									"\t}else if(jsonData.keys.length === 0){\r",
 									"\t\tpostman.setNextRequest(\"GenerateApplicationKey\")\r",
@@ -351,12 +343,10 @@
 							}
 						],
 						"url": {
-							"raw": "https://localhost:9443/api/am/store/v0.11/applications/{{applicationId}}",
-							"protocol": "https",
+							"raw": "{{storeHost}}/api/am/store/v0.11/applications/{{applicationId}}",
 							"host": [
-								"localhost"
+								"{{storeHost}}"
 							],
-							"port": "9443",
 							"path": [
 								"api",
 								"am",
@@ -428,12 +418,10 @@
 							}
 						},
 						"url": {
-							"raw": "https://localhost:9443/api/am/store/v0.11/applications/generate-keys?applicationId={{applicationId}}",
-							"protocol": "https",
+							"raw": "{{storeHost}}/api/am/store/v0.11/applications/generate-keys?applicationId={{applicationId}}",
 							"host": [
-								"localhost"
+								"{{storeHost}}"
 							],
-							"port": "9443",
 							"path": [
 								"api",
 								"am",
@@ -525,12 +513,10 @@
 							}
 						},
 						"url": {
-							"raw": "https://localhost:9443/client-registration/v0.11/register",
-							"protocol": "https",
+							"raw": "{{publisherHost}}/client-registration/v0.11/register",
 							"host": [
-								"localhost"
+								"{{publisherHost}}"
 							],
-							"port": "9443",
 							"path": [
 								"client-registration",
 								"v0.11",
@@ -616,12 +602,10 @@
 							]
 						},
 						"url": {
-							"raw": "https://localhost:8243/token",
-							"protocol": "https",
+							"raw": "{{tokenHost}}/token",
 							"host": [
-								"localhost"
+								"{{tokenHost}}"
 							],
-							"port": "8243",
 							"path": [
 								"token"
 							]
@@ -684,12 +668,10 @@
 							}
 						],
 						"url": {
-							"raw": "https://localhost:9443/api/am/publisher/v0.11/apis?query={{apiName}}",
-							"protocol": "https",
+							"raw": "{{publisherHost}}/api/am/publisher/v0.11/apis?query={{apiName}}",
 							"host": [
-								"localhost"
+								"{{publisherHost}}"
 							],
-							"port": "9443",
 							"path": [
 								"api",
 								"am",
@@ -721,6 +703,9 @@
 									"",
 									"postman.setEnvironmentVariable (\"subscriptionId\", jsonData.subscriptionId);",
 									"",
+									"if(responseCode.code === 409){",
+									"    \tpostman.setNextRequest(\"AccessTokenGeneration\")",
+									"}",
 									""
 								],
 								"type": "text/javascript"
@@ -765,12 +750,10 @@
 							}
 						},
 						"url": {
-							"raw": "https://localhost:9443/api/am/store/v0.11/subscriptions",
-							"protocol": "https",
+							"raw": "{{publisherHost}}/api/am/store/v0.11/subscriptions",
 							"host": [
-								"localhost"
+								"{{publisherHost}}"
 							],
-							"port": "9443",
 							"path": [
 								"api",
 								"am",
@@ -860,12 +843,10 @@
 							}
 						},
 						"url": {
-							"raw": "https://localhost:8243/token",
-							"protocol": "https",
+							"raw": "{{tokenHost}}/token",
 							"host": [
-								"localhost"
+								"{{tokenHost}}"
 							],
-							"port": "8243",
 							"path": [
 								"token"
 							]
@@ -899,12 +880,10 @@
 							}
 						],
 						"url": {
-							"raw": "https://localhost:8243/phoneverify/1.0.0/CheckPhoneNumber?PhoneNumber={{phoneNumber}}&LicenseKey=0",
-							"protocol": "https",
+							"raw": "{{apiHost}}/phoneverify/1.0.0/CheckPhoneNumber?PhoneNumber={{phoneNumber}}&LicenseKey=0",
 							"host": [
-								"localhost"
+								"{{apiHost}}"
 							],
-							"port": "8243",
 							"path": [
 								"phoneverify",
 								"1.0.0",
@@ -954,12 +933,10 @@
 							}
 						],
 						"url": {
-							"raw": "https://localhost:9443/api/am/store/v0.11/subscriptions/{{subscriptionId}}",
-							"protocol": "https",
+							"raw": "{{publisherHost}}/api/am/store/v0.11/subscriptions/{{subscriptionId}}",
 							"host": [
-								"localhost"
+								"{{publisherHost}}"
 							],
-							"port": "9443",
 							"path": [
 								"api",
 								"am",
@@ -996,12 +973,10 @@
 							}
 						],
 						"url": {
-							"raw": "https://localhost:9443/api/am/store/v0.11/applications/{{applicationId}}",
-							"protocol": "https",
+							"raw": "{{storeHost}}/api/am/store/v0.11/applications/{{applicationId}}",
 							"host": [
-								"localhost"
+								"{{storeHost}}"
 							],
-							"port": "9443",
 							"path": [
 								"api",
 								"am",
