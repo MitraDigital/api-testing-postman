@@ -7,6 +7,6 @@
 3. Update following configuration in test.postman_environment.json file
 `consumerKey, consumerSecret, apiContext, hostUrl`
 4. Execute the following command from script directory to run the test
-`newman run TokenAPITest.postman_collection.json -e test.postman_environment.json`
+`newman run APITest_collection.json -e Environment1.json`
 5. To Avoid SSL certificate validation error in local environment use following command
- `newman run TokenAPITest.postman_collection.json -e test.postman_environment.json --insecure`
+ `newman run APITest_collection.json -e Environment1.json --insecure`
