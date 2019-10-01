@@ -15,7 +15,7 @@ If you import the collection named ‘APITest_collection.json’, you can find  
 
 ##### Create Application
 
-###### >  CallingDynamicClientRegStoreEndpoint: To get the client credential to get access token in order to call  restful service of wso2 store
+###### CallingDynamicClientRegStoreEndpoint: To get the client credential to get access token in order to call  restful service of wso2 store
 #
 ```
 curl -X POST \
@@ -32,7 +32,7 @@ curl -X POST \
     "saasApp": true
 }'
 ```
-###### > CallingDynamicClientStoreGetAccessToken: To get the access token with scope of apim:subscribe
+###### CallingDynamicClientStoreGetAccessToken: To get the access token with scope of apim:subscribe
 #
 ```
 curl -X POST \
@@ -42,7 +42,7 @@ curl -X POST \
   -H 'cache-control: no-cache' \
   -d 'grant_type=password&username=admin&password=admin&scope=apim%3Asubscribe'
 ```
-###### > GetApplicationID : To Verify that application with given name is not exist 
+###### GetApplicationID : To Verify that application with given name is not exist 
 #
 ```
 curl -X GET \
@@ -52,7 +52,7 @@ curl -X GET \
   -H 'cache-control: no-cache'
 ```
 
-###### > CreateNewApplication: To Create a test application with given name
+###### CreateNewApplication: To Create a test application with given name
 #
 ```
 curl -X POST \
@@ -67,7 +67,7 @@ curl -X POST \
     "name": "apiTesApp"
 }'
 ```
-###### > GenerateApplicationKey: To generate the key for test application if it doesn’t has.
+###### GenerateApplicationKey: To generate the key for test application if it doesn’t has.
 #
 ```
 curl -X POST \
@@ -80,7 +80,7 @@ curl -X POST \
  ```
 #### Create New Subscription
 
-###### > CallingDynamicClientRegPublisherEndpoint: To get the client credential to generate access token of publisher restful service
+###### CallingDynamicClientRegPublisherEndpoint: To get the client credential to generate access token of publisher restful service
 #
 ```
 curl -X POST \
@@ -117,7 +117,7 @@ curl -X GET \
   -H 'Postman-Token: e4c3240e-bb00-4cb2-9796-3619eecb9c91' \
   -H 'cache-control: no-cache'
 ```
-###### > AddNewSubscription: To subscribe the API
+###### AddNewSubscription: To subscribe the API
 #
 ```
 curl -X POST \
@@ -135,7 +135,7 @@ curl -X POST \
 
 #### API Test
 
-###### > AccessTokenGeneration: To bearer token to invoke target api
+###### AccessTokenGeneration: To bearer token to invoke target api
 #
 ```
 curl -X POST \
@@ -158,7 +158,7 @@ postman.setEnvironmentVariable("apiBasicToken",base64) // environment variable n
 Sample Test Script for Token Generation 
 Using the JavaScript we can extract response and implement validations
 
-###### > CallPhoneVerificationAPI: To call target API
+###### CallPhoneVerificationAPI: To call target API
 #
 ```
 curl -X GET \
