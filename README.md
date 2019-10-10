@@ -63,3 +63,29 @@ To avoid the SSL certificate validation error in local environment execute follo
 ```
 $ newman run src/test/APITest_collection.json -e config/Environment1.json --insecure
 ```
+
+#### Jenkins Setup with Newman Report
+
+Inorder to execute postman testcases with report geneartion following pacgae need to be globally installed in jenkins server.
+
+```
+$ npm install -g newman-reporter-htmlextra
+```
+
+Configure jenkins build type as execute shell and give following command
+
+```
+newman run src/test/APITest_collection.json -e config/Environment1.json --insecure -r htmlextra --reporter-htmlextra-export report/build_Report.html
+```
+
+Build the project and find the report in following folder
+
+```
+workspace/report/build_report.html
+```
+
+if Report page is not in well format then execte following comand in jenkins script console to allow html/css plugins
+
+```
+System.setProperty( "hudson.model.DirectoryBrowserSupport.CSP" , "" )
+```
