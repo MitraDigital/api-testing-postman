@@ -1,5 +1,7 @@
 # api-testing-postman
 
+In this sample, we have use WSo2-am-2.1.0 (admin services REST api context gets differ depending on the version)
+
 ### Request Information
 
 In order to test an API which is exposed through WSO2 AM, we have create series of API requests using postman.
